@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: wheat;
+}
+.topbar{
+    background-color: black;
+}
+.navbar{
+    color: white;
+    width: 80%;
+    padding: 1em;
+}
+.links{
+    width: 40%;
+}
+div .links p:nth-child(3){
+    font-weight: bold;
+}
+.button{
+    padding: 3px 10px;
+    background-color: lightseagreen;
+}
+.main{
+    width: 80%;
+    height: 100%;
+}
+.user-card{
+    border: lightseagreen solid 5px;
+}
+.user-card-top{
+    background-color: lightseagreen;
+    height: 2em;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+.user-pic{
+    width: 7em;
+}
+.card-content{
+    padding: 0em 2em;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.align-center{
+    align-items: center;
+}
+.col1{
+    flex: 3;
+    padding: 2em 1em 2em 0em;
+}
+.col2{
+    flex: 2;
+    padding: 2em 0em 2em 1em;
+}
+.border{
+    border: darkslategray solid 5px;
+}
+.margin-left{
+    margin-left: .5em;
+}
+.icon{
+    height: 2em;
+}
+.content-padding{
+    padding-bottom: .5em;
+}
+.margin-bottom{
+    margin-bottom: 2em;
+}
+.content-topbar{
+    background-color: darkslategray;
+    padding: 1em 2em;
+    color: white;
+    margin-bottom: 1em;
+}
+.alert{
+    background-color: gray;
+    padding: .25em .5em;
+    border-radius: 50%;
+}
+.circle{
+    border-radius: 50%;
+}
+.border-bottom{
+    border-bottom: solid darkslategray 5px;
+}
+.padding-top{
+    padding-top: .5em;
+}
