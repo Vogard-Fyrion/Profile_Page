@@ -27,7 +27,7 @@
                         <img class= "user-pic" src="user-circle.png" alt="">
                     </div>
                     <div class= "card-content">
-                        <h1 class="content-padding">Levi Boggs</h1>
+                        <h1 id="name" class="content-padding">Levi Boggs</h1>
                         <div class= "flex align-center content-padding">
                             <img class= "icon" src="map-marker.png" alt="">
                             <p class= "margin-left">Spokane</p>
@@ -36,7 +36,12 @@
                         Master of shadows and the Internet!</p>
                         <div class= "flex align-center content-padding">
                             <img class= "icon" src="gear.png" alt="">
-                            <a class= "margin-left" href="#">edit profile</a>
+                            <a 
+                                onclick="editProfile('#name')"
+                                class= "margin-left" 
+                                href="#">
+                                edit profile
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -54,32 +59,48 @@
             <div class= "col2">
                 <div class= "border margin-bottom">
                     <div class="content-topbar">
-                        <h3><span class="alert">2</span> Connection Requests</h3>
+                        <h3><span id="requests" class="alert">2</span> Connection Requests</h3>
                     </div>
-                    <div class="card-content flex justify-between content-padding">
+                    <div id="todd" class="card-content flex justify-between content-padding">
                         <div class="flex align-center">
                             <img class="icon circle" src="todd-s.jpg" alt="">
                             <p class="margin-left">Todd E</p>
                         </div>
                         <div>
-                            <img class="icon" src="accept-circle.png" alt="">
-                            <img class="icon" src="close-circle.png" alt="">
+                            <img 
+                                onclick="accept('#todd')"
+                                class="icon" 
+                                src="accept-circle.png" 
+                                alt="">
+                            <img 
+                                onclick="decline('#todd')"
+                                class="icon" 
+                                src="close-circle.png" 
+                                alt="">
                         </div>
                     </div>
-                    <div class="card-content flex justify-between content-padding">
+                    <div id="phil" class="card-content flex justify-between content-padding">
                         <div class="flex align-center">
                             <img class="icon circle" src="phil-s.jpg" alt="">
                             <p class="margin-left">Phil K</p>
                         </div>
                         <div>
-                            <img class="icon" src="accept-circle.png" alt="">
-                            <img class="icon" src="close-circle.png" alt="">
+                            <img 
+                            onclick="accept('#phil')"
+                            class="icon" 
+                            src="accept-circle.png" 
+                            alt="">
+                            <img 
+                            onclick="decline('#phil')"
+                            class="icon" 
+                            src="close-circle.png" 
+                            alt="">
                         </div>
                     </div>
                 </div>
                 <div class= "your-con-card border margin-bottom">
                     <div class="content-topbar">
-                        <h3><span class="alert">500+</span> Your Connections</h3>
+                        <h3><span id="connections" class="alert">500</span> Your Connections</h3>
                     </div>
                     <div class="card-content flex flex-column content-padding border-bottom">
                         <div class="flex align-center content-padding">
@@ -106,5 +127,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
